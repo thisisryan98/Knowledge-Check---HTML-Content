@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">The Best Streaming Service Ever</h1>
+    
+    <div align = "center">
+        <nav>
+            <a href="index.html" style="margin-right: 20px;">Home</a>
+            <a href="about.html" style="margin-right: 20px;">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <br><br>
+    <div align="center">
+        <img src="https://www.timdixon.net/wp-content/uploads/2022/12/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvaXMxNjE3OS1pbWFnZS1rd3Z5ZnlzMi5qcGc-1200x800.jpg" alt="https://placehold.co/300x200" style="border:2px solid #000; border-radius:20px;" width="300" height="200">
+    </div>
+    
+    <main>
+        <h2 align="center">Our Services</h2>
+        <table border="3" cellpadding="10" align="center" width="50%">
+            <tr>
+                <th>Free</th>
+                <th>Paid WITH ads</th>
+                <th>Paid WITHOUT ads</th>
+                <th>Premium</th>
+            </tr>
+            <tr>
+                <td>$0.00</td>
+                <td>$7.99 a month</td>
+                <td>$14.99 a month</td>
+                <td>$24.99 a month</td>
+            </tr>
+            <tr>
+                <td>Access to a limited library of TV</td>
+                <td>Access to our full library of TV and Movies<br>Advertisments<br> Only one user</td>
+                <td>Access to our full library of TV and Movies<br>No Advertisements<br>Up to 3 Users</td>
+                <td>Access to our full library of TV and Movies <br> Up to 3 Users<br>Ability to record and download<br>Access to select sports events</td>
+            </tr>
+        </table>
+    </main>
+
+    <br><br>
+
+    <div align = "center">
+    <form action = "/submit" method = "POST" style="width:40%; margin:0 auto; text-align: center; border:2px solid #000; padding:16px; border-radius:12px;">
+    <!---Personal Information--->
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for = "name">Name:</label>
+        <input type = "text" id = "name" name = "name" required placeholder = "Enter your name">
+        <br>
+    
+        <label for = "email">Email:</label>
+        <input type = "text" id = "email" name = "email" required placeholder = "Enter your email">
+        <br>
+
+        <label for = "phone">Phone Number:</label>
+        <input type = "text" id = "phone" name = "phone" placeholder = "Enter your phone number">
+    </fieldset>
+  
+    <!---Preferences Section-->
+    <fieldset>
+        <legend>Contact Preference</legend>
+    <p>How would you prefer to be contacted? (Select all that apply)</p>
+      <input type="checkbox" id="pref-call" name="contact[]" value="call">
+      <label for="pref-call">Call</label>
+
+      <input type="checkbox" id="pref-email" name="contact[]" value="email">
+      <label for="pref-email">Email</label>
+      
+      <input type="checkbox" id="pref-text" name="contact[]" value="text">
+      <label for="pref-text">Text</label>
+
+      <input type="checkbox" id="pref-none" name="contact[]" value="no preference">
+      <label for="pref-none">No Preference</label>
+    </fieldset>
+
+    <!---How Did You Hear About Us?-->
+    <fieldset>
+        <legend>Source of Refferal</legend>
+        <p>How did you hear about us?</p>
+            <input type="radio" id="social-media" name="referral-source" value="social media">
+            <label for="social-media" style="margin-right: 20px;">Social Media</label>
+        
+            <input type="radio" id="word-of-mouth" name="referral-source" value="word-of-mouth">
+            <label for="word-of-mouth" style="margin-right: 20px;">Word Of Mouth</label>
+
+            <input type="radio" id="online-ad" name="referral-source" value="online-ad">
+            <label for="online-ad" style="margin-right: 20px;">Online Ad</label>
+
+            <input type="radio" id="tv-ad" name="referral-source" value="tv-ad">
+            <label for="tv-ad" style="margin-right: 20px;">TV Ad</label>
+            <br><br>
+            <input type="radio" id ="other" name="referral-source" value ="other" style="margin-right: 20px;">Other (Please Specify Below):
+            <br>
+            <textarea id="other-text" name="referral-source" rows="5" cols="50" placeholder = "(Optional)"></textarea>
+   
+    </fieldset>
+    <input type="submit" value="Submit">
+    </form>
+    </div>
+
+
+
+</body>
+</html>
